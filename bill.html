@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bill.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Facturas</title>
+</head>
+<body>
+  
+    <!-- header -->
+    <header class="header">
+        <i class="fas fa-align-justify burger-button" id="button"></i>
+            <nav class="menu" id="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="">Facturas</a>
+    
+                        <ul class="sub-menu">
+    
+                        <li><a href="">Nuevoa factura</a></li>
+    
+                        <li><a href="">Ver factura</a></li>
+    
+                        <li><a href="">Modificar factura</a></li>
+    
+                        <li><a href="">Eliminar factura</a></li>
+    
+    
+                        </ul>
+    
+                    </li>
+                    <li>
+                        <a href="">Clientes</a>
+    
+                        <ul class="sub-menu">
+    
+                            <li><a href="">Nuevo cliente</a></li>
+    
+                            <li><a href="client_check.php">Ver Clientes</a></li>
+    
+                            <li><a href="">Modificar cliente</a></li>
+    
+                            <li><a href="">Eliminar cliente</a></li>
+    
+    
+                        </ul>
+    
+                    </li>
+    
+                    <li>
+                        <a href="">Productos</a>
+    
+                        <ul class="sub-menu">
+    
+                            <li><a href="">Nuevo Producto</a></li>
+    
+                            <li><a href="">Ver Productos</a></li>
+    
+                            <li><a href="">Modificar Producto</a></li>
+    
+                            <li><a href="">Eliminar Producto</a></li>
+    
+    
+                        </ul>
+    
+                    </li>
+    
+                    <li>
+                        <a href="profile.php">Perfil</a>
+    
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="server/closed.php">salir</a>
+                            </li>
+                        </ul>
+    
+                    </li>
+    
+                </ul>
+            </nav>
+        </header>
+        <!-- header end -->
+
+  <h1 class="title">Facturas</h1>
+  <img src="img/log2.png" alt="logo">
+
+  <section class="add">
+
+    <h2>Agregar Facturas</h2>
+
+    <article >
+
+      <form action="" >
+        
+        <div class="add-container">
+
+          <div class="u-add-box">
+            <label for="numero_factura">Numero Factura</label>
+            <input type="text" name="numero_factura" class="u-input">
+          </div>
+    
+          <div class="u-add-box" >
+            <label for="fecha_factura">Fecha</label>
+            <input type="text" name="fecha_factura" class="u-input" placeholder="año/mes/dia">
+          </div>
+    
+          <div class="u-add-box">
+            <label for="cedual">Cedula Cliente</label>
+            <input type="text" name="cedula" class="u-input">
+          </div>
+    
+          <div class="u-add-box">
+            <label for="sede_factura">Sede</label>
+            <input type="text" name="sede_factura" class="u-input">
+          </div>
+
+        </div>
+
+        <div class="u-btn">
+          <button type="submit" class="u-btn">Enviar</button>
+        </div>
+
+      </form>
+    </article>
+    
+    <article>
+      <form>
+        <h3>Productos</h3>
+
+        <div>
+          <label for="factura_producto">Numero De Factura</label>
+          <input type="text" name="factura_producto" class="u-input">
+        </div>
+
+
+        <div>
+          <label for="codigo_producto">Codigo Producto</label>
+          <input type="text" name="codigo_producto" class="u-input">
+        </div>
+              
+          <div>
+            <label for="cantidad_producto">Cantidad Producto</label>
+            <input type="text" name="cantidad_producto"class="u-input">
+          </div>
+
+          <div class="u-btn">
+
+            <button>Agregar</button>
+      
+            <button type="submit" >Enviar</button>
+
+          </div>  
+    </article>
+
+    </form>
+  </section>
+
+  
+
+  <script src="js/header.js"></script>
+</body>
+</html>

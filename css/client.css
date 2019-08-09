@@ -1,0 +1,238 @@
+html,
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.u-input{
+    border: 1px solid #FACC2E;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.u-box{
+    width: 50%;
+}
+
+
+.header{
+    text-align: center;
+    width: 100vh;
+}
+
+.burger-button{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+    background: #D8D8D8;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 3;
+    color: #fff;
+    position: fixed;
+}
+
+.menu{
+    background: #FACC2E;
+    position: relative;
+    top: -200px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li{
+    padding: 15px;
+    border-bottom: 1px solid #fff; 
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff; 
+    font-size: 17px; 
+}
+
+.sub-menu{
+    display: none;
+}
+
+.menu ul li:hover {
+    background: #B09F03;
+}
+
+.menu ul li:hover ul{
+    display: block;
+}
+
+.sub-menu li:hover{
+    background: #FACC2E;
+}
+
+.active{
+    top: 0;
+}
+
+.records{
+    padding-top: 60px; 
+}
+
+.title{
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 30%;
+    display: inline-block;
+    margin: 0;
+}
+
+.logo img{
+    width: 100%;
+}
+
+
+.client{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.client table{
+    border: 1px solid #FACC2E;
+    font-size: 22px;
+    margin: 10px;
+    padding: 25px;
+    width: 100%;
+}
+
+.client table th{
+    padding: 15px;
+}
+
+.create{
+    border-top:2px solid #D8D8D8;
+    border-bottom:2px solid #D8D8D8;
+    padding: 20px;
+    background: #FF8F00;
+    color: #fff;
+}
+
+.create h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+.create-container label{
+    display: block;
+}
+
+.create-container{
+    text-align: center;
+    margin: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttom{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttom button{
+    padding: 8px;
+    border: none;
+    background: #FACC2E;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.search{
+    text-align: center;
+    border-bottom:2px solid #D8D8D8;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.search-title{
+    font-size: 2.5rem;
+}
+
+.search-container label{
+    display: block;
+}
+
+.delete{
+    text-align: center;
+    background: #FF8F00;
+    color: #fff;
+    padding: 40px;
+}
+
+.delete-title{
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.delete-container label{
+    display: block;
+}
+
+.update{
+    text-align: center;
+}
+
+.update h2{
+    font-size: 2.5rem;
+}
+
+.update-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.update-active{
+    display: flex;
+}
+
+.update-container-box{
+    width: 40%;
+}
+
+.update-container-box label{
+    display: block;
+}

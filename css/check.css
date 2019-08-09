@@ -1,0 +1,48 @@
+html,
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.u-container-box{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.check{
+    width: 600px;
+    margin: auto;
+    background: #BDBDBD;
+    padding: 30px 50px;
+}
+
+.check h2{
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.check label{
+    display: block;
+}
+
+.check a{
+    color: blue;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contienr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.terminos{
+    margin-bottom: 30px;
+}

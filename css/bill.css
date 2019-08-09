@@ -1,0 +1,123 @@
+html,
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.u-input{
+    border: 1px solid #FACC2E;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.u-box{
+    width: 50%;
+}
+
+.u-add-box{
+    width: 40%;
+}
+
+.u-btn{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.u-btn button{
+    padding: 8px;
+    border: none;
+    background: #FFF;
+    color: #FACC2E;
+    border-radius: 8px;
+}
+
+.header{
+    text-align: center;
+    width: 100vh;
+}
+
+.burger-button{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+    background: #D8D8D8;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 3;
+    color: #fff;
+    position: fixed;
+}
+
+.menu{
+    background: #FACC2E;
+    position: relative;
+    top: -200px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li{
+    padding: 15px;
+    border-bottom: 1px solid #fff; 
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff; 
+    font-size: 17px; 
+}
+
+.sub-menu{
+    display: none;
+}
+
+.menu ul li:hover {
+    background: #B09F03;
+}
+
+.menu ul li:hover ul{
+    display: block;
+}
+
+.sub-menu li:hover{
+    background: #FACC2E;
+}
+
+.active{
+    top: 0;
+}
+
+.title{
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.add{
+    background: #FACC2E;
+}
+
+.add-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.add label{
+    display: block;
+}

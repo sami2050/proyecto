@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/product.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700|Roboto:300,400,500,700" rel="stylesheet">
+    <!-- end fonts -->      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Productos</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+            <i class="fas fa-align-justify burger-button" id="button"></i>
+                <nav class="menu" id="menu">
+                    <ul class="menu-list">
+                        <li>
+                            <a href="">Facturas</a>
+        
+                            <ul class="sub-menu">
+        
+                            <li><a href="">Nuevoa factura</a></li>
+        
+                            <li><a href="">Ver factura</a></li>
+        
+                            <li><a href="">Modificar factura</a></li>
+        
+                            <li><a href="">Eliminar factura</a></li>
+        
+        
+                            </ul>
+        
+                        </li>
+                        <li>
+                            <a href="">Clientes</a>
+        
+                            <ul class="sub-menu">
+        
+                                <li><a href="">Nuevo cliente</a></li>
+        
+                                <li><a href="client_check.php">Ver Clientes</a></li>
+        
+                                <li><a href="">Modificar cliente</a></li>
+        
+                                <li><a href="">Eliminar cliente</a></li>
+        
+        
+                            </ul>
+        
+                        </li>
+        
+                        <li>
+                            <a href="">Productos</a>
+        
+                            <ul class="sub-menu">
+        
+                                <li><a href="">Nuevo Producto</a></li>
+        
+                                <li><a href="product_check.php">Ver Productos</a></li>
+        
+                                <li><a href="">Modificar Producto</a></li>
+        
+                                <li><a href="">Eliminar Producto</a></li>
+        
+        
+                            </ul>
+        
+                        </li>
+        
+                        <li>
+                            <a href="profile.php">Perfil</a>
+        
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="server/closed.php">salir</a>
+                                </li>
+                            </ul>
+        
+                        </li>
+        
+                    </ul>
+                </nav>
+            </header>
+            <!-- header end -->
+
+    <section>
+        
+            <h1 class="title">Productos</h1>
+            <div class="logo">
+                <img src="img/log2.png" alt="logo">
+            </div>
+        
+    </section>
+
+    <section class="new_product">
+        <h2 class="u-title">Agregar Producto</h2>
+        <div class="container">
+            <form action="server/product/insert.php" method="POST" class="container-box">
+    
+                <div>
+                    <label for="codigo_producto">Codigo Producto</label>
+                    <input type="text" name="codigo_producto" class="u-input">
+                </div>
+                <div>
+                    <label for="nombre_producto">Nombre Producto</label>
+                    <input type="text" name="nombre_producto" class="u-input">
+                </div>
+                <div>
+                    <label for="valor_unitario_producto">Valor Unitario Producto</label>
+                    <input type="text" name="valor_unitario_producto" class="u-input">
+                </div>
+    
+                <button type="submit" class="u-btn">Enviar</button>
+    
+            </form>
+    
+            <div class="container-box">
+                <img src="img/Máscara.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="search-product">
+        <h2 class="u-title">Buscar</h2>
+        <form action="server/product/search.php" method="POST" id="search">
+            <p>Por Codigo Producto:</p>
+
+            <div>
+                <label for="codigo_search" >Codigo Producto</label>
+                <input type="text" name="codigo_search" class="u-input">
+            </div>
+
+            <div id="messenger"></div>
+
+            <button type="submit" class="u-btn">Buscar</button>
+        </form>
+    </section>
+
+    <section class="delete-product">
+        <h2 class="u-title">Eliminar</h2>
+
+        <form action="server/product/deleteProduct.php" method="POST">
+
+            <p>Por Codigo del producto:</p>
+    
+            <div>
+                <label for="codigo_delete">Codigo Producto</label>
+                <input type="text" name="codigo_delete" class="u-input">
+            </div>
+    
+            <button type="submit" class="u-btn">Eliminar</button>
+
+        </form>
+
+    </section>
+
+    <section class="update">
+        <h2>Modificar</h2>
+
+        <form action="server/product/deleteProduct.php" class="update-container" method="POST">
+
+            <div>
+                <label for="">Codigo Producto</label>
+                <input type="text" required class="u-input" name="codigo_update">
+            </div>
+
+            <div>
+                <label for="">Nombre Producto</label>
+                <input type="text" required class="u-input" name="nombre_update">
+            </div>
+
+            <div>
+                <label for="">Valor Unitario</label>
+                <input type="text" required class="u-input" name="valor_update">
+            </div>
+
+            <button type="submit" class="u-btn">Modificar</button>
+
+        </form>
+    </section>
+    <script src="js/header.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
